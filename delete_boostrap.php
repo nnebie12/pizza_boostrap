@@ -20,7 +20,11 @@
                 </button>
             </div>
             <div class="modal-body">
-                <?php echo $message; // Affichage du message ici ?>
+                <?php
+                $message = "Message de suppression";
+                $table_name = "entite";
+                $entity_id = 123;
+                echo $message;  ?>
 
                 <!-- Formulaire de suppression -->
                 <form action="" method="post">
