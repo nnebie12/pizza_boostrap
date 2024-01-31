@@ -43,9 +43,9 @@
 
     echo '<div class="row">';
     while ($row = $result->fetch_assoc()) {
-        echo '<div class="col-md-4">';
-        echo '<div class="card">';
-        echo '<img src="images_clients/' . $row['NOMCLIE'] . '.jpg" class="card-img-top" alt="' . $row['NOMCLIE'] . '">';
+        echo '<div class="col-md-4 mb-4">';
+        echo '<div class="card flex-fill h-100">';
+        echo '<img src="images_clients/' . $row['NROCLIE'] . '.jpg" class="card-img-top" alt="' . $row['NROCLIE'] . '">';
         echo '<div class="card-body">';
         echo '<h5 class="card-title">' . $row['NOMCLIE'] . ' ' . $row['PRENOMCLIE'] . '</h5>';
         echo '<p class="card-text">' . $row['ADRESSECLIE'] . ', ' . $row['VILLECLIE'] . '</p>';
@@ -53,7 +53,6 @@
         echo '<p class="card-text"><strong>Numéro du client:</strong> ' . $row['NROCLIE'] . '</p>';
         echo '<p class="card-text"><strong>Titre du client:</strong> ' . $row['TITRECLIE'] . '</p>';
         echo '<div class="livreur-card-buttons">';
-        echo "<a class='btn btn-success' href='commander.php'>Commander</a> ";
         echo "<a class='btn btn-primary' href='udapte_boostrap.php'>Modifier</a>";
         echo "<a class='btn btn-danger' href='delete_boostrap.php'>Supprimer</a>";
         echo '</div>';
@@ -65,6 +64,7 @@
     ?>
 
 </div>
+
 
 <!-- Ajout de scripts Bootstrap (jQuery et Popper.js) -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>

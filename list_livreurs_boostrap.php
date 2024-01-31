@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <!-- Ajout de lien vers la feuille de style Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
+
 <body>
 
 <form class="navbar bg-dark">
@@ -23,7 +25,6 @@
 </form>
 
 <div class="container mt-4">
-
     <h1 class="text-center text-light">AWALLEY</h1>
 
     <?php
@@ -49,7 +50,6 @@
         echo '<p class="card-text"><strong>Numéro du Livreur:</strong> ' . $row['NROLIVR'] . '</p>';
         echo '<p class="card-text"><strong>Date d\'embauche:</strong> ' . $row['DATEEMBAUCHELIVR'] . '</p>';
         echo '<div class="livreur-card-buttons">';
-        echo "<a class='btn btn-success' href='commander.php'>Commander</a> ";
         echo "<a class='btn btn-primary' href='udapte_boostrap.php'>Modifier</a>";
         echo "<a class='btn btn-danger' href='delete_boostrap.php'>Supprimer</a>";
         echo '</div>';
@@ -69,4 +69,5 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 </body>
+
 </html>

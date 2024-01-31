@@ -50,7 +50,7 @@
         echo '<p class="card-text"><strong>Numéro de Pizza:</strong> ' . $row['NROPIZZ'] . '</p>';
         echo '<p class="card-text"><strong>Prix:</strong> ' . $row['TARIFPIZZ'] . ' euros</p>';
         echo '<div class="pizza-card-buttons">';
-        echo "<a class='btn btn-success' href='commander.php'>Commander</a> ";
+        echo "<a class='btn btn-success' href='commander_boostrap.php'>Commander</a> ";
         echo "<a class='btn btn-primary' href='udapte_boostrap.php'>Modifier</a>";
         echo "<a class='btn btn-danger' href='delete_boostrap.php'>Supprimer</a>";
         echo '</div>';
